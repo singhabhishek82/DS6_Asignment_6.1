@@ -1,0 +1,19 @@
+# Assignment 6.1
+x = np.array([4,6,3,5])
+N=3
+np.vander(x,N)
+np.column_stack([x**(N-1-i) for i in range(N)])
+np.vander(x)
+np.vander(x, increasing=True)
+
+
+#With Increasing Boolean Argument = False
+ 
+x = np.array([4,6,3,5])
+N=3
+np.vander(x,N)
+np.column_stack([x**(N-1-i) for i in range(N)])
+np.vander(x)
+np.vander(x, increasing=False)
+
+
